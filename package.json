@@ -1,0 +1,29 @@
+{
+  "name": "task-management-api",
+  "version": "1.0.0",
+  "description": "Task management api",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Caioohv/task-management-api.git"
+  },
+  "keywords": [
+    "tasks",
+    "api"
+  ],
+  "author": "Caio Vieira",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Caioohv/task-management-api/issues"
+  },
+  "homepage": "https://github.com/Caioohv/task-management-api#readme",
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "nodemon": "^3.1.9",
+    "sequelize": "^6.37.5"
+  }
+}
