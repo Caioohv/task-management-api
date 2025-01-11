@@ -1,11 +1,9 @@
 module.exports = () => {
   const express = require('express');
   const morgan = require('morgan')
-  const cors = require('cors')
   
   require('dotenv').config();
   
-  const port = process.env.PORT || 3000;
   const app = express();
   
   morgan.token('statusColor', (req, res, args) => {
@@ -23,7 +21,6 @@ module.exports = () => {
   })
   
   app.use(morgan('\x1b[33m:method\x1b[0m \x1b[36m:url\x1b[0m :statusColor :response-time ms'))
-  app.use(cors())
 
   return app;
 }
