@@ -1,12 +1,12 @@
 module.exports = () => {
   const express = require('express');
   const morgan = require('morgan')
-  
+
   require('dotenv').config();
   
   const app = express();
   
-  morgan.token('statusColor', (req, res, args) => {
+  morgan.token('statusColor', (req, res) => {
     var status = (typeof res.headersSent !== 'boolean' ? Boolean(res.header) : res.headersSent)
       ? res.statusCode
       : undefined
